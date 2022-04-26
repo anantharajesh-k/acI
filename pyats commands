@@ -1,0 +1,18 @@
+code aci_testbed.yaml
+
+ pyats validate testbed aci_testbed.yaml
+ 
+ pyats run genie --testbed-file aci_testbed.yaml --trigger-datafile trigger_datafile_presnapshot.yaml --trigger-uids Pre_snapshot --subsection-datafile subsection_datafile.yaml
+
+pyats logs view
+
+cat pre_snapshots/vzBrCP.json
+
+pyats validate datafile trigger_datafile_presnapshot.yaml
+
+cp trigger_datafile_presnapshot.yaml trigger_datafile_postsnapshot.yaml -->  post validation...
+
+URLS:
+ https://pubhub.devnetcloud.com/media/genie-feature-browser/docs/#/apis      
+ From the drop-down menu, choose to view only APIC-related APIs.     on the url  : Return to the API list and change the filter from APIC to Common      Review the returned list. Note that there are many functions to be used for various tasks, and one of them is save_dict_to_json_file. You will use this function when creating the snapshot file of the retrieved APIC MO information.
+ 
