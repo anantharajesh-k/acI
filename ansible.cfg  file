@@ -1,0 +1,9 @@
+[defaults]
+# <TODO> Specify the local Python interpreter
+interpreter_python = /usr/bin/env Python
+
+# <TODO> Specify the inventory file
+inventory = inventory.yaml
+
+# <TODO> Ask for the vault password without a command line argument
+ask_vault_pass = True
