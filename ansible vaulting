@@ -1,0 +1,6 @@
+(py3venv) student@student-vm:~/ansible/host_vars/apic$ ansible-vault encrypt vault.yml 
+New Vault password: 
+Confirm New Vault password: 
+Encryption successful
+(py3venv) student@student-vm:~/ansible/host_vars/apic$ code vault.yml 
+(py3venv) student@student-vm:~/ansible/host_vars/apic$ ansible-vault view vault.yml 
